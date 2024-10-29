@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ====== Header Styles ====== */
+.header {
+  padding: 20px;
+  background: white;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+  
+.footer-social .social-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 5px;
+}
+.footer-social {
+  margin-top: 10px;
+}
+
+/* ====== Hero Styles ====== */
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image: url('./img/historias.png'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Para que el contenido esté por encima de la sombra */
+  text-align: center; /* Asegura que todo el contenido dentro de hero-content esté centrado */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 600px; /* Establece un ancho máximo para el párrafo */
+  margin: 20px auto 40px; /* Centra el párrafo horizontalmente */
+  line-height: 1.8; /* Añade espacio entre las líneas */
+}
+
+.btn-facebook {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6de1c3;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid;
+  color: #f2f2f2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade sombra al botón */
+}
+
+.btn-facebook:hover {
+  background-color: #5dc5a8; /* Cambia el color al pasar el mouse */
+}
+
+/* ====== Footer Styles ====== */
+.footer {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-info a {
+  color: #5dc5a8;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* Ajustes del Footer */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo .logo {
+    width: 60px;
+    margin-bottom: 0px;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  .footer-info a {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 469px) {
+  .hero {
+    height: 65vh;
+    padding: 20px;
+  }
+  
+  /* Ajustes del Footer */
+  .footer {
+    padding: 30px 20px;
+    text-align: center;
+    color: #333;
+    font-size: 0.9rem;
+  }
+}
